@@ -1,6 +1,6 @@
 <template>
 
-  //TODO: Add ramdom API call on backend
+  <!--TODO: Add ramdom API call on backend-->
   <div v-for="quote in quotes" :key="quote.id">
       <h3>{{quote.quote}}</h3>
       <p>{{quote.author}}</p>
