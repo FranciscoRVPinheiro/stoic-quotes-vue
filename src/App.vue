@@ -1,8 +1,9 @@
 <template>
   <div>
     <the-header></the-header>
-
-    <api-call></api-call>
+    <div class="mrg">
+      <api-call></api-call>
+    </div>
   </div>
 </template>
 
@@ -28,8 +29,12 @@ html {
 }
 
 body {
-  margin: 0;
   background-color: black;
   color: white;
+  margin: 0; 
+}
+
+.mrg {
+   margin: 25px;
 }
 </style>

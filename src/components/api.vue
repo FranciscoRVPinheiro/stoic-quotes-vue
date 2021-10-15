@@ -1,9 +1,11 @@
 <template>
-  <div>
+
+  //TODO: Add ramdom API call on backend
+  <div v-for="quote in quotes" :key="quote.id">
       <h3>{{quote.quote}}</h3>
       <p>{{quote.author}}</p>
-      <button v-on:click="reloadPage">Get another quote</button>
   </div>
+  <button v-on:click="reloadPage">Get another quote</button>
 </template>
 
 <script>
@@ -12,14 +14,14 @@ import axios from 'axios'
 export default {
   data() {
     return {
-        quote: []
+        quotes: [] 
     };
   },
   created(){
       axios.get('https://stoicism-quotes.herokuapp.com/api/?format=json')
       .then(response => {
-          //console.log(response.data)
-          this.quote = response.data
+          console.log(response.data)
+          this.quotes = response.data
       })
       .catch(error => {
           console.log(error.response)
@@ -38,5 +40,8 @@ export default {
     color: white;
     align-items: center;
     text-align: center;
+    padding: 30;
+
  }
+
 </style>
