@@ -5,7 +5,7 @@
       <h3>{{quote.quote}}</h3>
       <p>{{quote.author}}</p>
   </div>
-  <button v-on:click="reloadPage">Get another quote</button>
+  <button v-on:click="apiCall">Get another quote</button>
 </template>
 
 <script>
@@ -30,7 +30,18 @@ export default {
   methods: {
       reloadPage() {
       window.location.reload();
-    }
+      },
+      apiCall() {
+        axios.get('https://stoicism-quotes.herokuapp.com/api/?format=json')
+      .then(response => {
+          console.log(response.data)
+          this.quotes = response.data
+      })
+      .catch(error => {
+          console.log(error.response)
+      })
+
+      }
   }
 };
 </script>
