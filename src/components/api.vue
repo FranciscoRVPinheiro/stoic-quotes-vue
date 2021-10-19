@@ -28,9 +28,6 @@ export default {
       })
   },
   methods: {
-      reloadPage() {
-      window.location.reload();
-      },
       apiCall() {
         axios.get('https://stoicism-quotes.herokuapp.com/api/random?format=json')
       .then(response => {
