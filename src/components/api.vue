@@ -18,7 +18,7 @@ export default {
     };
   },
   created(){
-      axios.get('https://stoicism-quotes.herokuapp.com/api/?format=json')
+      axios.get('https://stoicism-quotes.herokuapp.com/api/random?format=json')
       .then(response => {
           console.log(response.data)
           this.quotes = response.data
