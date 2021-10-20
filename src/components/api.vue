@@ -22,14 +22,7 @@ export default {
     };
   },
   created(){
-      axios.get('https://stoicism-quotes.herokuapp.com/api/random?format=json')
-      .then(response => {
-          console.log(response.data)
-          this.quotes = response.data
-      })
-      .catch(error => {
-          console.log(error.response)
-      })
+    this.apiCall()
   },
   methods: {
       apiCall() {
