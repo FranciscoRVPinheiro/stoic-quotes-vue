@@ -2,7 +2,7 @@
  <div class="mrg">
     <!--TODO: Add ramdom API call on backend-->
     <div v-for="quote in quotes" :key="quote.id">
-        <p>"{{quote.quote}}"</p>
+        <p><i>"{{quote.quote}}"</i></p>
         <strong>{{quote.author}}</strong>
     </div>
       <br>
