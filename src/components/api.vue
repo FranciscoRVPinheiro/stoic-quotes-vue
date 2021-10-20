@@ -2,7 +2,7 @@
  <div class="mrg">
     <!--TODO: Add ramdom API call on backend-->
     <div v-for="quote in quotes" :key="quote.id">
-        <p>{{quote.quote}}</p>
+        <p>"{{quote.quote}}"</p>
         <strong>{{quote.author}}</strong>
     </div>
       <br>
@@ -56,9 +56,9 @@ export default {
  }
 
  .mrg {
-   position: fixed;
+   position: absolute;
    left: 50%;
-   top: 60%;
+   top: 50%;
    transform: translate(-50%, -50%);
    text-size-adjust: 50%;
 
