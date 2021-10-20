@@ -1,11 +1,15 @@
 <template>
-
-  <!--TODO: Add ramdom API call on backend-->
-  <div v-for="quote in quotes" :key="quote.id">
-      <h3>{{quote.quote}}</h3>
-      <p>{{quote.author}}</p>
-  </div>
-  <button class="btn btn-outline-primary" v-on:click="apiCall">Get another quote</button>
+ <div class="mrg">
+    <!--TODO: Add ramdom API call on backend-->
+    <div v-for="quote in quotes" :key="quote.id">
+        <p>{{quote.quote}}</p>
+        <strong>{{quote.author}}</strong>
+    </div>
+      <br>
+      <div>
+        <button class="btn btn-outline-primary" v-on:click="apiCall">Get another quote</button>
+      </div>
+   </div>
 </template>
 
 <script>
@@ -48,8 +52,16 @@ export default {
     align-items: center;
     text-align: center;
     padding: 30;
-   
-
+  
  }
+
+ .mrg {
+   position: fixed;
+   left: 50%;
+   top: 60%;
+   transform: translate(-50%, -50%);
+   text-size-adjust: 50%;
+
+}
 
 </style>

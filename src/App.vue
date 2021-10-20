@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-header></the-header>
-    <div class="mrg">
+    <div>
       <api-call></api-call>
     </div>
   </div>
@@ -31,13 +31,7 @@ html {
 body {
   align-items: center;
   text-align: center;
+
 }
 
-.mrg {
-  position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   padding: 10px;
-}
 </style>
