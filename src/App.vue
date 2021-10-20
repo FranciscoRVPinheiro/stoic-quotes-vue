@@ -29,10 +29,15 @@ html {
 }
 
 body {
-  margin: 0; 
+  align-items: center;
+  text-align: center;
 }
 
 .mrg {
-   margin: 25px;
+  position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   padding: 10px;
 }
 </style>
