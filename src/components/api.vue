@@ -5,7 +5,7 @@
       <h3>{{quote.quote}}</h3>
       <p>{{quote.author}}</p>
   </div>
-  <button v-on:click="apiCall">Get another quote</button>
+  <button class="btn btn-outline-primary" v-on:click="apiCall">Get another quote</button>
 </template>
 
 <script>
@@ -45,10 +45,10 @@ export default {
 
 <style>
  div {
-    color: white;
     align-items: center;
     text-align: center;
     padding: 30;
+   
 
  }
 

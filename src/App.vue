@@ -29,8 +29,6 @@ html {
 }
 
 body {
-  background-color: black;
-  color: white;
   margin: 0; 
 }
 
