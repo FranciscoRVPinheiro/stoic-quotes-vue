@@ -17,8 +17,7 @@ export default {
     'api-call': api,
   },
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>
@@ -31,7 +30,5 @@ html {
 body {
   align-items: center;
   text-align: center;
-
 }
-
 </style>

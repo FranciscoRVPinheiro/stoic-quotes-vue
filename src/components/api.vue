@@ -40,12 +40,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
  div {
     align-items: center;
     text-align: center;
     padding: 30;
-  
  }
 
  .mrg {
@@ -54,7 +53,6 @@ export default {
    top: 50%;
    transform: translate(-50%, -50%);
    text-size-adjust: 50%;
-
 }
 
 </style>
