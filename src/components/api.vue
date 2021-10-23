@@ -44,7 +44,9 @@ export default {
  div {
     align-items: center;
     text-align: center;
-    padding: 30;
+    justify-content: center;
+    font-size: 110%;
+
  }
 
  .mrg {
