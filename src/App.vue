@@ -18,10 +18,6 @@ export default {
   components: {
     'the-header': TheHeader,
     'api-call': api,
-
-  },
-  data() {
-    return {};
   },
 };
 </script>
