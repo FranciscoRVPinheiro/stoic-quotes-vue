@@ -1,6 +1,5 @@
 <template>
  <div class="mrg">
-    <!--TODO: Add ramdom API call on backend-->
     <div class="flexbox" v-for="quote in quotes" :key="quote.id">
         <p><i>"{{quote.quote}}"</i></p>
         <strong>{{quote.author}}</strong>
@@ -57,5 +56,4 @@ export default {
   align-items: center;
   font-size: 110%;
 }
-
 </style>
