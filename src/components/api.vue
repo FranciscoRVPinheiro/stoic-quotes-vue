@@ -1,7 +1,7 @@
 <template>
  <div class="mrg">
     <!--TODO: Add ramdom API call on backend-->
-    <div v-for="quote in quotes" :key="quote.id">
+    <div class="flexbox" v-for="quote in quotes" :key="quote.id">
         <p><i>"{{quote.quote}}"</i></p>
         <strong>{{quote.author}}</strong>
     </div>
@@ -34,21 +34,12 @@ export default {
       .catch(error => {
           console.log(error.response)
       })
-
       }
   }
 };
 </script>
 
 <style scoped>
- div {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 110%;
-
- }
-
  .mrg {
    position: absolute;
    left: 50%;
@@ -56,6 +47,15 @@ export default {
    transform: translate(-50%, -50%);
    text-size-adjust: 50%;
 
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 110%;
 }
 
 </style>
