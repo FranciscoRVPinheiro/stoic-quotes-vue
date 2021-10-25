@@ -44,8 +44,6 @@ export default {
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
-   text-size-adjust: 50%;
-
 }
 
 .flexbox {
@@ -54,6 +52,17 @@ export default {
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: 110%;
+  font-size: 120%;
+}
+
+@media only screen 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .flexbox {
+      font-size: 90%;
+    }  
+    .mrg {
+      top: 65%;
+    }
 }
 </style>
