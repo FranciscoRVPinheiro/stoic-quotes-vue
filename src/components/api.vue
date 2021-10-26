@@ -5,8 +5,8 @@
         <strong>{{quote.author}}</strong>
     </div>
       <br>
-      <div>
-        <button class="btn btn-outline-primary" v-on:click="apiCall">Get another quote</button>
+      <div class="button-center">
+        <button class="btn btn-outline-primary" @click="apiCall">Get another quote</button>
       </div>
    </div>
 </template>
@@ -42,7 +42,7 @@ export default {
  .mrg {
    position: absolute;
    left: 50%;
-   top: 50%;
+   top: 60%;
    transform: translate(-50%, -50%);
 }
 
@@ -64,5 +64,10 @@ export default {
     .mrg {
       top: 65%;
     }
+}
+
+.button-center {
+    align-items: center;
+    text-align: center;
 }
 </style>

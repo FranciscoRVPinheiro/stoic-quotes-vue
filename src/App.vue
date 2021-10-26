@@ -23,12 +23,5 @@ export default {
 </script>
 
 <style>
-html {
-  font-family: sans-serif;
-}
 
-body {
-  align-items: center;
-  text-align: center;
-}
 </style>
