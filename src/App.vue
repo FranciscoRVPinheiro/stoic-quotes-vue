@@ -1,9 +1,9 @@
 <template>
   <div>
-    <the-header></the-header>
+    <TheHeader />
 
       <div>
-        <api-call></api-call>
+        <Api />
       </div>
 
   </div>
@@ -11,13 +11,13 @@
 
 <script>
 import TheHeader from './components/TheHeader.vue';
-import api from './components/api.vue';
+import Api from './components/api.vue';
 
 
 export default {
   components: {
-    'the-header': TheHeader,
-    'api-call': api,
+    TheHeader,
+    Api,
   },
 };
 </script>

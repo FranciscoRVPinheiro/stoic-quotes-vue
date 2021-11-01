@@ -52,14 +52,14 @@ export default {
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: 120%;
+  font-size: 1.5rem;
 }
 
 @media only screen 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     .flexbox {
-      font-size: 90%;
+      font-size: 1rem;
     }  
     .mrg {
       top: 65%;
