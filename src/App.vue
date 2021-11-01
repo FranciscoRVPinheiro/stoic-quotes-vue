@@ -1,11 +1,9 @@
 <template>
   <div>
     <TheHeader />
-
       <div>
         <Api />
       </div>
-
   </div>
 </template>
 

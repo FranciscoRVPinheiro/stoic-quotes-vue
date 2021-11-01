@@ -11,31 +11,24 @@
    </div>
 </template>
 
-<script>
+<script setup>
 import axios from 'axios'
+import { ref } from 'vue'
 
-export default {
-  data() {
-    return {
-        quotes: [] 
-    };
-  },
-  created(){
-    this.apiCall()
-  },
-  methods: {
-      apiCall() {
-        axios.get('https://stoicism-quotes.herokuapp.com/api/random?format=json')
+let quotes = ref([])
+
+function apiCall() {
+      axios.get('https://stoicism-quotes.herokuapp.com/api/random?format=json')
       .then(response => {
           console.log(response.data)
-          this.quotes = response.data
+          quotes.value = response.data
       })
       .catch(error => {
           console.log(error.response)
       })
       }
-  }
-};
+
+apiCall(); 
 </script>
 
 <style scoped>
@@ -46,20 +39,23 @@ export default {
    transform: translate(-50%, -50%);
 }
 
+/* TODO: Make font-size responsive. Should not clash or bleed into header. */
+
 .flexbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: calc(1em + 1vmin);
 }
 
 @media only screen 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     .flexbox {
-      font-size: 1rem;
+      font-size: calc(0.75em + 1vmin);
     }  
     .mrg {
       top: 65%;
