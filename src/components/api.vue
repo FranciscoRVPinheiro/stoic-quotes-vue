@@ -32,20 +32,11 @@ apiCall();
 </script>
 
 <style scoped>
- /* .mrg {
-   position: absolute;
-   left: 50%;
-   top: 60%;
-   transform: translate(-50%, -50%);
-} */
-
 .mrg {
   margin-top: 12rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
-
-/* TODO: Make font-size responsive. Should not clash or bleed into header. */
 
 .flexbox {
   display: flex;
