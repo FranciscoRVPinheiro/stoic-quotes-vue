@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     background-color: #6d4aee;
-    position: absolute;
+    position: static;
   }
 
   header h1 {
