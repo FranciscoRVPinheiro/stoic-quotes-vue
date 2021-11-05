@@ -20,7 +20,6 @@ let quotes = ref([])
 function apiCall() {
       axios.get('https://stoicism-quotes.herokuapp.com/api/random?format=json')
       .then(response => {
-          console.log(response.data)
           quotes.value = response.data
       })
       .catch(error => {
@@ -33,7 +32,7 @@ apiCall();
 
 <style scoped>
 .mrg {
-  margin-top: 12rem;
+  margin-top: 10rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -44,7 +43,6 @@ apiCall();
   justify-content: center;
   text-align: center;
   align-items: center;
-  /* font-size: 1.5rem; */
   font-size: calc(1em + 1vmin);
 }
 
@@ -55,7 +53,7 @@ apiCall();
       font-size: calc(0.75em + 1vmin);
     }  
     .mrg {
-      margin-top: 6rem;
+      margin-top: 5rem;
       margin-left: 3rem;
       margin-right: 3rem;
     }
