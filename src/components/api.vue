@@ -63,4 +63,8 @@ apiCall();
     align-items: center;
     text-align: center;
 }
+
+button:hover {
+    cursor: pointer;
+}
 </style>

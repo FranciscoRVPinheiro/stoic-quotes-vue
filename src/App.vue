@@ -7,17 +7,10 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import TheHeader from './components/TheHeader.vue';
 import Api from './components/api.vue';
 
-
-export default {
-  components: {
-    TheHeader,
-    Api,
-  },
-};
 </script>
 
 <style>
