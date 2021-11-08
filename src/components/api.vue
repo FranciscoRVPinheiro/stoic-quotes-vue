@@ -4,10 +4,10 @@
         <p><i>"{{quote.quote}}"</i></p>
         <strong>{{quote.author}}</strong>
     </div>
-      <br>
-      <div class="button-center">
-        <button class="btn btn-outline-primary" @click="apiCall">Get another quote</button>
-      </div>
+    <br>
+    <div class="button-center">
+      <button class="btn btn-outline-primary" @click="apiCall">Get another quote</button>
+    </div>
    </div>
 </template>
 
@@ -25,7 +25,7 @@ function apiCall() {
       .catch(error => {
           console.log(error.response)
       })
-      }
+}
 
 apiCall(); 
 </script>
