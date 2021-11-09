@@ -10,7 +10,6 @@
 <script setup>
 import TheHeader from './components/TheHeader.vue';
 import Api from './components/api.vue';
-
 </script>
 
 <style>

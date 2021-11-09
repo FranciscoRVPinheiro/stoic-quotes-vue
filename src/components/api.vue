@@ -1,8 +1,8 @@
 <template>
  <div class="mrg">
     <div class="flexbox" v-for="quote in quotes" :key="quote.id">
-        <p><i>"{{quote.quote}}"</i></p>
-        <strong>{{quote.author}}</strong>
+          <p><i>"{{ quote.quote }}"</i></p>
+          <strong>{{ quote.author }}</strong>
     </div>
     <br>
     <div class="button-center">
