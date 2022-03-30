@@ -1,8 +1,8 @@
 {
   "name": "Stoic Quotes",
   "short_name": "Stoic Quotes",
-  "theme_color": "#6d4aee",
-  "msTileColor": "#6d4aee",
+  "theme_color": "#42b883",
+  "msTileColor": "#42b883",
   "icons": [
     {
       "src": "./img/icons/android-launchericon-192-192.png",
