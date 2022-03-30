@@ -4,7 +4,7 @@
       <div v-if="hasQuotes">
         <div v-for="quote in quotes" :key="quote.id">
           <p><em>"{{ quote.quote }}"</em></p>
-          <p class="d-flex justify-content-center "><strong>{{ quote.author }}</strong></p>
+          <h3 class="d-flex justify-content-center custom-font"><strong>{{ quote.author }}</strong></h3>
         </div>
 
         <div class="d-flex justify-content-center p-3">
@@ -53,5 +53,11 @@ apiCall()
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+.custom-font {
+  font-family: 'Hurricane', cursive;
+}
+
 
 </style>
