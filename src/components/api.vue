@@ -10,7 +10,7 @@
         </div>
 
           <!-- button -->
-        <div class="d-flex justify-content-center p-5">
+        <div class="d-flex justify-content-center p-5 ">
           <button class="btn btn-sample " @click="apiCall">Next</button>
         </div>
  
@@ -50,6 +50,7 @@ apiCall()
 .custom-font {
   font-family: 'Hurricane', cursive;
 }
+
 
 .text-animation {
 

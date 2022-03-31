@@ -1,7 +1,7 @@
 <template>
 
   <nav class="navbar navbar-text bg-dark text-white d-flex justify-content-center ">
-    <h1>Stoic Quotes</h1>
+    <h1 class="p-3">Stoic Quotes</h1>
   </nav>
   
 </template>

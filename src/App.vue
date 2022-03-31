@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid bg-dark new-class">
-    <div class="m-0 p-0">
+    <div >
       <TheHeader />
     </div>
 
