@@ -15,6 +15,9 @@
         </div>
  
       </div>
+      <div v-else>
+        <h1 class="d-flex justify-content-center custom-font text-animation">{{ noConnection }}</h1>
+      </div>
     </div>
   </div>
 
@@ -28,6 +31,7 @@ import { ref } from 'vue'
 
 let quotes = ref([])
 let hasQuotes = ref(false)
+let noConnection = ref('')
 
 async function apiCall() {
   try {
@@ -36,6 +40,7 @@ async function apiCall() {
       hasQuotes.value = true
   } catch(error) {
       console.log(error)
+      noConnection.value = 'Seems you are not connected to the internet'
   }
 }
 
