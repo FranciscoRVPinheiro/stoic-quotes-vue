@@ -15,9 +15,9 @@
         </div>
  
       </div>
-      <div v-else>
-        <h1 class="d-flex justify-content-center custom-font text-animation">{{ noConnection }}</h1>
-      </div>
+        <div v-else>
+          <h1 class="d-flex justify-content-center custom-font text-animation">{{ noConnection }}</h1>
+        </div>
     </div>
   </div>
 
@@ -35,7 +35,7 @@ let noConnection = ref('')
 
 async function apiCall() {
   try {
-      const response = await axios.get('https://stoicism-quotes.herokuapp.com/api/random?format=json')
+      const response = await axios.get('https://web-production-8b5e.up.railway.app/api/random/?format=json')
       quotes.value = await response.data
       hasQuotes.value = true
   } catch(error) {
