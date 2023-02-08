@@ -5,7 +5,7 @@
 
           <!-- Quotes -->
         <div v-for="quote in quotes" :key="quote.id">
-          <p class="fst-italic fs-4 text-animation">"{{ quote.quote }}"</p>
+          <p class="fst-italic fs-4 text-animation">"{{ quote.body }}"</p>
           <h3 class="d-flex justify-content-center custom-font text-animation">{{ quote.author }}</h3>
         </div>
 
@@ -35,7 +35,7 @@ let noConnection = ref('')
 
 async function apiCall() {
   try {
-      const response = await axios.get('https://web-production-8b5e.up.railway.app/api/random/?format=json')
+      const response = await axios.get('https://stoicquotesapi.com/v1/api/quotes/random')
       quotes.value = await response.data
       hasQuotes.value = true
   } catch(error) {
