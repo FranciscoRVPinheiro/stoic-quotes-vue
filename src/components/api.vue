@@ -36,7 +36,7 @@ let noConnection = ref('')
 async function apiCall() {
   try {
       const response = await axios.get('https://stoicquotesapi.com/v1/api/quotes/random')
-      quotes.value = await response.data
+      quotes.value = await response
       hasQuotes.value = true
   } catch(error) {
       console.log(error)
