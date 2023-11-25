@@ -38,6 +38,7 @@ async function apiCall() {
   try {
       const response = await axios.get('https://stoic-quotes.adaptable.app/quotes/random/quote')
       quotes.value = await response.data
+      console.log(quotes.value)
       hasQuotes.value = true
   } catch(error) {
       console.log(error)
