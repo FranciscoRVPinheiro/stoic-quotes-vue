@@ -1,5 +1,5 @@
-Front end made in Vue 3, using the composition api.
+Simple frontend made in Vue 3, using the composition api.
 
-It consumes an api made by me using django rest framework.
+It consumes a rest api made by me using NestJS: https://stoic-quotes.adaptable.app/
 
 You can take a look at it here: https://stoicquotes.netlify.app/
