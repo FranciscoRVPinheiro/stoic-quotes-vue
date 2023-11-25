@@ -4,9 +4,10 @@
       <div v-if="hasQuotes">
 
           <!-- Quotes -->
-         <div v-for="quote in quotes" :key="quote[id]">
-          <p class="fst-italic fs-4 text-animation">"{{ quote.quote }}"</p>
-          <h3 class="d-flex justify-content-center custom-font text-animation">{{ quote.author }}</h3>
+         <!-- <div v-for="quote in quotes" :key="quote[id]"> -->
+         <div>
+          <p class="fst-italic fs-4 text-animation">"{{ quote }}"</p>
+          <h3 class="d-flex justify-content-center custom-font text-animation">{{ author }}</h3>
         </div>
 
           <!-- button -->
