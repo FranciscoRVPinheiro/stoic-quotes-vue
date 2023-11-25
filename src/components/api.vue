@@ -4,8 +4,8 @@
       <div v-if="hasQuotes">
 
           <!-- Quotes -->
-         <!-- <div v-for="quote in quotes" :key="quote[id]"> -->
-         <div>
+          <div v-for="quote in quotes" :key="quote[id]">
+         
           <p class="fst-italic fs-4 text-animation">"{{ quote }}"</p>
           <h3 class="d-flex justify-content-center custom-font text-animation">{{ author }}</h3>
         </div>
@@ -38,7 +38,6 @@ async function apiCall() {
   try {
       const response = await axios.get('https://stoic-quotes.adaptable.app/quotes/random/quote')
       quotes.value = await response.data
-      console.log(quotes.value)
       hasQuotes.value = true
   } catch(error) {
       console.log(error)
